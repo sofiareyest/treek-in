@@ -1,0 +1,80 @@
+.btn-blue {
+    font-family: $raleway;
+    color: $white;
+    background: $ball-blue;
+    text-decoration: none;
+    // border: 2px solid $quick-silver;
+    padding: 8px 25px;
+    display: inline-block;
+    font-size: $small;
+    font-weight: $bold;
+    margin-bottom: 15px;
+}
+
+.btn-blue-large {
+    font-family: $raleway;
+    color: $white;
+    background: $ball-blue;
+    text-decoration: none;
+    // border: 2px solid $quick-silver;
+    padding: 8px 40px;
+    display: inline-block;
+    font-size: $small;
+    font-weight: $bold;
+    margin-bottom: 15px;
+}
+
+.btn-normal {
+    font-family: $raleway;
+    color: $nickel;
+    background: $white;
+    text-decoration: none;
+    // border: 2px solid $quick-silver;
+    padding: 8px 25px;
+    display: inline-block;
+    font-size: $small;
+    font-weight: $bold;
+    margin-bottom: 15px;
+}
+
+.card {
+    padding: 1rem;
+    width: 60%;
+    margin-left: 6rem;
+    border: 1px solid $silver-chalice;
+    background-color: #fff;
+    &:hover {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+        transition: box-shadow .5s cubic-bezier(.19, 1, .22, 1), -webkit-box-shadow .5s cubic-bezier(.19, 1, .22, 1);
+    }
+    &__title,
+    &__price {
+        font-family: $raleway;
+        margin: 0;
+        padding: .5rem;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: $large;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: $x-large;
+    }
+    &__line {
+        border-color: $lavander-gray;
+    }
+    &__list {
+        min-height: 180px;
+        font-family: $open-sans;
+    }
+    &__item {
+        font-size: .9rem;
+        line-height: 35px;
+    }
+    &__button {
+        padding-top: .5rem;
+        font-size: .95rem;
+        text-align: center;
+    }
+}

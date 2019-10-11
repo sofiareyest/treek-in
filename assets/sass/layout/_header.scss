@@ -1,0 +1,110 @@
+.header {
+    position: relative;
+}
+
+.header__brand {
+    position: absolute;
+    top: 1.3rem;
+    left: 2.5em;
+    width: 50px;
+    height: 50px;
+    background: url('../img/Logo.svg');
+    background-repeat: no-repeat;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    a {
+        font-family: $raleway;
+        text-align: left;
+        font-weight: 400;
+        text-decoration: none;
+        padding: .5em;
+        margin: 1rem;
+        font-size: 15px;
+        color: $nickel;
+        &:hover {
+            color: black;
+        }
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.collapsible {
+    text-align: right;
+    padding-right: 2rem;
+    padding-top: 1.8rem;
+    label {
+        display: block;
+        font-size: 1.8rem;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+input:checked~.header__container {
+    max-height: 100%;
+}
+
+.header__container {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.hl2 {
+    padding-left: 40rem;
+}
+
+.header__list {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-align: left;
+    padding: .5em;
+    font-family: $raleway;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    &:hover {
+        color: $nickel;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header__brand {
+        top: 2em;
+        left: 3em;
+    }
+    .collapsible {
+        label {
+            display: none;
+        }
+    }
+    .header__container {
+        max-height: 100%;
+        padding: 1em 2rem 1em 3rem;
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__list {
+        display: flex;
+        margin: inherit;
+        padding: inherit;
+    }
+    a {
+        padding: .5em 1em;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
